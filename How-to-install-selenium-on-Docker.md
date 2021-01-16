@@ -67,4 +67,6 @@ If you enter `docker ps -a`, you can see the list of `Container ID`. The most re
 docker commit <ID> <ImageName>
 ```
 
+<img width="1362" alt="스크린샷 2021-01-16 오후 10 46 26" src="https://user-images.githubusercontent.com/56240088/104813521-fe2c3180-584c-11eb-9387-29445410d264.png">
+
 The END ~
