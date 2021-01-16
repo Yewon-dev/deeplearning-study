@@ -71,3 +71,21 @@ docker commit <ID> <ImageName>
 
 
 The END ~
+
+<br></br>
+<br></br>
++) 참고로 PhantomJS는 더이상 유지보수를 진행하지 않음. PhantomJS 대신 Chrome이나 Firefox 사용.
+<br></br>
+```
+wget https://chromedriver.storage.googleapi.com/2.35/chromedriver_linux64.zip
+apt-get install unzip
+unzip chromedriver_linux64.zip
+```
+In Python Code:
+```python
+options = webdriver.ChromeOptions()
+options.add_argument('headless')
+options.add_argument('--no-sandbox')
+options.add_argument('--disable-dev-shm-usage')
+browser = webdriver.Chrome(chrome_options=options,executable_path="./chromedriver")
+```
